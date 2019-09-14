@@ -1856,8 +1856,8 @@ lg-autoplay.js@^1.0.0:
   integrity sha1-CDB91Bg+w9OiPDRYkKQaXGT+N1E=
 
 "lg-fullscreen.js@https://github.com/ttys3/lg-fullscreen.js.git":
-  version "1.1.1"
-  resolved "https://github.com/ttys3/lg-fullscreen.js.git#dc19c63df2735385f94900b18fc99494c1f4c01a"
+  version "1.1.2"
+  resolved "https://github.com/ttys3/lg-fullscreen.js.git#f886f952ab51d7b501bc25d07636d53c6b09ed81"
 
 lg-thumbnail.js@^1.1.0:
   version "1.1.0"
