@@ -1,6 +1,6 @@
 {
   "name": "vue-lightgalleryjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Full featured javascript lightbox gallery, No dependencies.",
   "main": "dist/js/vue-lightgalleryjs.js",
   "jsnext:main": "src/index.js",
@@ -42,6 +42,7 @@
   "dependencies": {
     "lg-autoplay.js": "^1.0.0",
     "lg-fullscreen.js": "https://github.com/ttys3/lg-fullscreen.js.git",
+    "lg-pager.js": "^1.0.0",
     "lg-thumbnail.js": "^1.1.0",
     "lg-zoom.js": "^1.0.1",
     "lightgallery.js": "^1.1.3"

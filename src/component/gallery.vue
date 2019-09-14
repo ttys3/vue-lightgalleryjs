@@ -7,6 +7,7 @@
   import 'lightgallery.js/dist/css/lightgallery.min.css'
   // lg-slide and lg-fade transitions are included in lightgallery.css.
   // for all other transitions you need to include lg-transitions.css in your document
+  // https://sachinchoolur.github.io/lightgallery.js/demos/transitions.html
   import 'lightgallery.js/dist/css/lg-transitions.min.css'
   import lightgallery from 'lightgallery.js'
   // <!-- lightgallery plugins -->
@@ -14,6 +15,7 @@
   import 'lg-thumbnail.js'
   import 'lg-zoom.js'
   import 'lg-autoplay.js'
+  import 'lg-pager.js'
 
   export default {
     props: {
@@ -83,7 +85,8 @@
           swipeThreshold: 50,
           dynamic: true,
           dynamicEl: this.images,
-          thumbnail: true,
+          thumbnail: true, //thumbnail indicator
+          pager: false, //dot indicator
         }, this.options);
 
         this.el = document.querySelector(`#${this.id}`)

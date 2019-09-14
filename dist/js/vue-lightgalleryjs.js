@@ -1,6 +1,6 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js/dist/css/lg-transitions.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-zoom.js'), require('lg-autoplay.js')) :
-  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js/dist/css/lg-transitions.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-zoom.js', 'lg-autoplay.js'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js/dist/css/lg-transitions.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-zoom.js'), require('lg-autoplay.js'), require('lg-pager.js')) :
+  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js/dist/css/lg-transitions.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-zoom.js', 'lg-autoplay.js', 'lg-pager.js'], factory) :
   (global = global || self, global.VueLightgallery = factory(null, null, global.lightgallery_js));
 }(this, function (lightgallery_min_css, lgTransitions_min_css, lightgallery_js) { 'use strict';
 
@@ -75,7 +75,10 @@
           swipeThreshold: 50,
           dynamic: true,
           dynamicEl: this.images,
-          thumbnail: true
+          thumbnail: true,
+          //thumbnail indicator
+          pager: false //dot indicator
+
         }, this.options);
         this.el = document.querySelector(`#${this.id}`);
         let myself = this; // https://sachinchoolur.github.io/lightgallery.js/docs/api.html#events

@@ -1859,6 +1859,11 @@ lg-autoplay.js@^1.0.0:
   version "1.1.2"
   resolved "https://github.com/ttys3/lg-fullscreen.js.git#f886f952ab51d7b501bc25d07636d53c6b09ed81"
 
+lg-pager.js@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/lg-pager.js/download/lg-pager.js-1.0.0.tgz#62a5f07f9f976cae7cfdb1dbd3e208b6c12fc7ab"
+  integrity sha1-YqXwf5+XbK58/bHb0+IItsEvx6s=
+
 lg-thumbnail.js@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/lg-thumbnail.js/download/lg-thumbnail.js-1.1.0.tgz#21bd65900955047787d6f07795eaff5ef0f5f671"
