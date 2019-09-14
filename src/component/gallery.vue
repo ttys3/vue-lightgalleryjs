@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import 'lightgallery.js/dist/css/lightgallery.css'
+  import 'lightgallery.js/dist/css/lightgallery.min.css'
   import lightgallery from 'lightgallery.js'
   // <!-- lightgallery plugins -->
   import 'lg-fullscreen.js'
