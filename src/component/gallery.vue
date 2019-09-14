@@ -67,6 +67,7 @@
           index: index,
           mode: 'lg-fade',
           closable: false, //warning: enable this will cause the bug that: the gallery get closed soon after it opened (closeGallery->lg-dragging)
+          mousewheel: true,
           speed: 600,
           addClass: '',
           startClass: 'lg-start-zoom',
