@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-zoom.js'), require('lg-autoplay.js')) :
-  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-zoom.js', 'lg-autoplay.js'], factory) :
-  (global = global || self, global.VueLightgallery = factory(null, global.lightgallery_js));
-}(this, function (lightgallery_min_css, lightgallery_js) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js/dist/css/lg-transitions.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-zoom.js'), require('lg-autoplay.js')) :
+  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js/dist/css/lg-transitions.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-zoom.js', 'lg-autoplay.js'], factory) :
+  (global = global || self, global.VueLightgallery = factory(null, null, global.lightgallery_js));
+}(this, function (lightgallery_min_css, lgTransitions_min_css, lightgallery_js) { 'use strict';
 
   lightgallery_js = lightgallery_js && lightgallery_js.hasOwnProperty('default') ? lightgallery_js['default'] : lightgallery_js;
 
@@ -59,6 +59,7 @@
           mode: 'lg-fade',
           closable: false,
           //warning: enable this will cause the bug that: the gallery get closed soon after it opened (closeGallery->lg-dragging)
+          mousewheel: true,
           speed: 600,
           addClass: '',
           startClass: 'lg-start-zoom',
