@@ -63,13 +63,13 @@
         const options = Object.assign({
           index: index,
           mode: 'lg-fade',
+          closable: false, //warning: enable this will cause the bug that: the gallery get closed soon after it opened (closeGallery->lg-dragging)
           speed: 600,
           addClass: '',
           startClass: 'lg-start-zoom',
           backdropDuration: 150,
-          hideBarsDelay: 6000,
+          hideBarsDelay: 1000,
           useLeft: false,
-          closable: true,
           loop: true,
           controls: true,
           getCaptionFromTitleOrAlt: true,
