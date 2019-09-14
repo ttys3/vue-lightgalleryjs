@@ -5,6 +5,9 @@
 
 <script>
   import 'lightgallery.js/dist/css/lightgallery.min.css'
+  // lg-slide and lg-fade transitions are included in lightgallery.css.
+  // for all other transitions you need to include lg-transitions.css in your document
+  import 'lightgallery.js/dist/css/lg-transitions.min.css'
   import lightgallery from 'lightgallery.js'
   // <!-- lightgallery plugins -->
   import 'lg-fullscreen.js'
