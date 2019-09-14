@@ -1,0 +1,60 @@
+{
+  "name": "vue-lightgalleryjs",
+  "version": "1.0.1",
+  "description": "Full featured javascript lightbox gallery, No dependencies.",
+  "main": "dist/js/vue-lightgalleryjs.js",
+  "jsnext:main": "src/index.js",
+  "unpkg": "dist/js/vue-lightgalleryjs.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint ./",
+    "build": "NODE_ENV=production node_modules/.bin/rollup -c ./build/rollup.config.js && NODE_ENV=production BUILD_MODE=minify node_modules/.bin/rollup -c ./build/rollup.config.js",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttys3/vue-lightgalleryjs.git"
+  },
+  "author": "HuangYeWuDeng <*@nanodm.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttys3/vue-lightgalleryjs/issues"
+  },
+  "homepage": "https://github.com/ttys3/vue-lightgalleryjs#readme",
+  "keywords": [
+    "vue-lightgalleryjs",
+    "vuejs-lightgalleryjs",
+    "vue",
+    "vuejs",
+    "lightgallery",
+    "lightgallery.js",
+    "images",
+    "pictures",
+    "carousel",
+    "slider",
+    "mobile",
+    "touch",
+    "vue-plugin",
+    "vue-component"
+  ],
+  "dependencies": {
+    "lightgallery.js": "^1.1.3",
+    "lg-fullscreen.js": "^1.1.0",
+    "lg-thumbnail.js": "^1.1.0",
+    "lg-zoom.js": "^1.0.1",
+    "lg-autoplay.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.13.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup-plugin-vue": "5.0.0",
+    "vue-template-compiler": "^2.6.4"
+  }
+}
