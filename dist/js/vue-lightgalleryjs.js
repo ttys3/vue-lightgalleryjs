@@ -130,6 +130,28 @@
         return this.curIndex;
       },
 
+      //get current options
+      getConfig() {
+        return this.instance.s;
+      },
+
+      //get current img
+      getCurImg() {
+        return document.querySelector('.lg-current img');
+      },
+
+      //get current thumb img
+      getCurThumbImg() {
+        return document.querySelector('.lg-thumb-item.active img');
+      },
+
+      //Goto specific slide
+      slideIndex(index) {
+        this.curIndex = index;
+        this.instance.s.index = index;
+        this.instance.slide(index);
+      },
+
       close() {
         if (this.isClosed) {
           return;
@@ -169,6 +191,24 @@
           this.enterFullScreen();
         } // this.instance.modules.fullscreen.fullScreen()
 
+      },
+
+      next() {
+        this.instance.goToNextSlide();
+      },
+
+      prev() {
+        this.instance.goToPrevSlide();
+      },
+
+      play() {
+        // startlAuto ? maybe it's a typo
+        // see https://github.com/sachinchoolur/lg-autoplay.js/blob/master/src/lg-autoplay.js#L140
+        this.instance.modules.autoplay.startlAuto();
+      },
+
+      pause() {
+        this.instance.modules.autoplay.cancelAuto();
       }
 
     }

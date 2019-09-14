@@ -1,6 +1,6 @@
 {
   "name": "vue-lightgalleryjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Full featured javascript lightbox gallery, No dependencies.",
   "main": "dist/js/vue-lightgalleryjs.js",
   "jsnext:main": "src/index.js",
