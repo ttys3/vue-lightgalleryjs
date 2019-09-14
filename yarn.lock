@@ -1855,10 +1855,9 @@ lg-autoplay.js@^1.0.0:
   resolved "https://registry.npm.taobao.org/lg-autoplay.js/download/lg-autoplay.js-1.0.0.tgz#08307dd4183ec3d3a23c345890a41a5c64fe3751"
   integrity sha1-CDB91Bg+w9OiPDRYkKQaXGT+N1E=
 
-lg-fullscreen.js@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/lg-fullscreen.js/download/lg-fullscreen.js-1.1.0.tgz#f2af474bd6b0febfc24c4a7cc44bac032bc8f84b"
-  integrity sha1-8q9HS9aw/r/CTEp8xEusAyvI+Es=
+"lg-fullscreen.js@https://github.com/ttys3/lg-fullscreen.js.git":
+  version "1.1.1"
+  resolved "https://github.com/ttys3/lg-fullscreen.js.git#dc19c63df2735385f94900b18fc99494c1f4c01a"
 
 lg-thumbnail.js@^1.1.0:
   version "1.1.0"
