@@ -43,7 +43,6 @@
         instance: null,
         curIndex: 0,
         isClosed: false,
-        isFullscreen: false,
       };
     },
 
@@ -143,21 +142,19 @@
         }
       },
       enterFullScreen() {
-        if (this.isFullscreen) {
+        if (this.instance.modules.fullscreen.isFullScreen()) {
           return
         }
         this.instance.modules.fullscreen.requestFullscreen()
-        this.isFullscreen = true
       },
       exitFullScreen() {
-        if (!this.isFullscreen) {
+        if (!this.instance.modules.fullscreen.isFullScreen()) {
           return
         }
         this.instance.modules.fullscreen.exitFullscreen()
-        this.isFullscreen = false
       },
       toggleFullScreen() {
-        if (this.isFullscreen) {
+        if (this.instance.modules.fullscreen.isFullScreen()) {
           this.exitFullScreen()
         } else {
           this.enterFullScreen()
