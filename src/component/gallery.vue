@@ -13,7 +13,7 @@
   // <!-- lightgallery plugins -->
   import 'lg-fullscreen.js'
   import 'lg-thumbnail.js'
-  import 'lg-zoom.js'
+  // import 'lg-zoom.js'
   import 'lg-autoplay.js'
   import 'lg-pager.js'
 

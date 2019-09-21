@@ -1,6 +1,6 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js/dist/css/lg-transitions.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-zoom.js'), require('lg-autoplay.js'), require('lg-pager.js')) :
-  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js/dist/css/lg-transitions.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-zoom.js', 'lg-autoplay.js', 'lg-pager.js'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lightgallery.js/dist/css/lightgallery.min.css'), require('lightgallery.js/dist/css/lg-transitions.min.css'), require('lightgallery.js'), require('lg-fullscreen.js'), require('lg-thumbnail.js'), require('lg-autoplay.js'), require('lg-pager.js')) :
+  typeof define === 'function' && define.amd ? define(['lightgallery.js/dist/css/lightgallery.min.css', 'lightgallery.js/dist/css/lg-transitions.min.css', 'lightgallery.js', 'lg-fullscreen.js', 'lg-thumbnail.js', 'lg-autoplay.js', 'lg-pager.js'], factory) :
   (global = global || self, global.VueLightgallery = factory(null, null, global.lightgallery_js));
 }(this, function (lightgallery_min_css, lgTransitions_min_css, lightgallery_js) { 'use strict';
 
